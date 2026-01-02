@@ -14,7 +14,7 @@ export function transformV2ReviewToV1(reviewV2: GoogleReviewV2): GoogleReview {
         starRating: reviewV2.rating ? reviewV2.rating.value : 0,
         comment: reviewV2.text,
         createTime: reviewV2.createdAt,
-        updateTime: reviewV2.updatedAt ?? null,
+        updateTime: reviewV2.publishedAt ?? null,
     };
 }
 
