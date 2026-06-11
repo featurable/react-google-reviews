@@ -1,6 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5", 
+    "ignoreDeprecations": "6.0",
     "esModuleInterop": true, 
     "forceConsistentCasingInFileNames": true,
     "strict": true, 
@@ -11,11 +12,12 @@
     "declarationDir": "types",
     "sourceMap": true,
     "outDir": "dist",
-    "moduleResolution": "node",
+    "rootDir": "src",
+    "moduleResolution": "bundler",
     "allowSyntheticDefaultImports": true,
     "emitDeclarationOnly": true,
     "jsx": "react-jsx",
-    "jsxImportSource": "@emotion/react",
+    "jsxImportSource": "@emotion/react"
   },
   "include": ["src"],
   "exclude": ["node_modules", "example"]
