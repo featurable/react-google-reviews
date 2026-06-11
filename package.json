@@ -1,101 +1,101 @@
 {
-  "name": "react-google-reviews",
-  "version": "1.9.0",
-  "description": "A React component to easily display Google reviews using Google Places API or Google My Business API.",
-  "scripts": {
-    "start": "webpack serve --config webpack.config.js",
-    "dev": "rollup -c rollup.config.dev.js -w --bundleConfigAsCjs",
-    "typecheck": "tsc --noEmit --pretty false",
-    "prepack": "npm run build",
-    "build": "rollup -c --bundleConfigAsCjs"
-  },
-  "keywords": [
-    "react",
-    "google",
-    "reviews",
-    "google reviews",
-    "google places",
-    "google my business",
-    "google maps"
-  ],
-  "author": "Ryan Chiang <ryan@featurable.com> (https://featurable.com)",
-  "homepage": "https://github.com/ryanschiang/react-google-reviews#readme",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/ryanschiang/react-google-reviews.git"
-  },
-  "bugs": {
-    "url": "https://github.com/ryanschiang/react-google-reviews/issues",
-    "email": "ryan@featurable.com"
-  },
-  "devDependencies": {
-    "@rollup/plugin-commonjs": "^26.0.1",
-    "@rollup/plugin-html": "^1.0.3",
-    "@rollup/plugin-node-resolve": "^15.2.3",
-    "@rollup/plugin-replace": "^5.0.7",
-    "@rollup/plugin-terser": "^0.4.4",
-    "@rollup/plugin-typescript": "^11.1.6",
-    "@types/react": "^19.2.17",
-    "@types/react-dom": "^19.2.3",
-    "@types/react-slick": "^0.23.13",
-    "autoprefixer": "^10.4.19",
-    "css-loader": "^7.1.2",
-    "html-webpack-plugin": "^5.6.0",
-    "postcss": "^8.4.38",
-    "postcss-import": "^16.1.0",
-    "react": "^19.2.7",
-    "react-dom": "^19.2.7",
-    "rollup": "^4.18.0",
-    "rollup-plugin-analyzer": "^4.0.0",
-    "rollup-plugin-dts": "^6.4.1",
-    "rollup-plugin-livereload": "^2.0.5",
-    "rollup-plugin-peer-deps-external": "^2.2.4",
-    "rollup-plugin-postcss": "^4.0.2",
-    "rollup-plugin-serve": "^1.1.1",
-    "style-loader": "^4.0.0",
-    "tailwindcss": "^3.4.4",
-    "ts-loader": "^9.5.1",
-    "tslib": "^2.6.3",
-    "typescript": "^6.0.3",
-    "webpack": "^5.93.0",
-    "webpack-cli": "^5.1.4",
-    "webpack-dev-server": "^5.0.4"
-  },
-  "main": "dist/cjs/index.js",
-  "module": "dist/esm/index.js",
-  "files": [
-    "dist"
-  ],
-  "types": "dist/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./dist/index.d.ts",
-      "import": "./dist/esm/index.js",
-      "require": "./dist/cjs/index.js",
-      "default": "./dist/esm/index.js"
+    "name": "react-google-reviews",
+    "version": "1.9.0",
+    "description": "A React component to easily display Google reviews using Google Places API or Google My Business API.",
+    "scripts": {
+        "start": "webpack serve --config webpack.config.js",
+        "dev": "rollup -c rollup.config.dev.js -w --bundleConfigAsCjs",
+        "typecheck": "tsc --noEmit --pretty false",
+        "prepack": "npm run build",
+        "build": "rollup -c --bundleConfigAsCjs"
     },
-    "./dist/index.css": "./dist/index.css",
-    "./index.css": "./dist/index.css",
-    "./package.json": "./package.json"
-  },
-  "peerDependencies": {
-    "@types/react": "^18.0.0 || ^19.0.0",
-    "react": "^18.0.0 || ^19.0.0",
-    "react-dom": "^18.0.0 || ^19.0.0"
-  },
-  "peerDependenciesMeta": {
-    "@types/react": {
-      "optional": true
+    "keywords": [
+        "react",
+        "google",
+        "reviews",
+        "google reviews",
+        "google places",
+        "google my business",
+        "google maps"
+    ],
+    "author": "Ryan Chiang <ryan@featurable.com> (https://featurable.com)",
+    "homepage": "https://github.com/ryanschiang/react-google-reviews#readme",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/ryanschiang/react-google-reviews.git"
+    },
+    "bugs": {
+        "url": "https://github.com/ryanschiang/react-google-reviews/issues",
+        "email": "ryan@featurable.com"
+    },
+    "devDependencies": {
+        "@rollup/plugin-commonjs": "^26.0.1",
+        "@rollup/plugin-html": "^1.0.3",
+        "@rollup/plugin-node-resolve": "^15.2.3",
+        "@rollup/plugin-replace": "^5.0.7",
+        "@rollup/plugin-terser": "^0.4.4",
+        "@rollup/plugin-typescript": "^11.1.6",
+        "@types/react": "^19.2.17",
+        "@types/react-dom": "^19.2.3",
+        "@types/react-slick": "^0.23.13",
+        "autoprefixer": "^10.4.19",
+        "css-loader": "^7.1.2",
+        "html-webpack-plugin": "^5.6.0",
+        "postcss": "^8.4.38",
+        "postcss-import": "^16.1.0",
+        "react": "^19.2.7",
+        "react-dom": "^19.2.7",
+        "rollup": "^4.18.0",
+        "rollup-plugin-analyzer": "^4.0.0",
+        "rollup-plugin-dts": "^6.4.1",
+        "rollup-plugin-livereload": "^2.0.5",
+        "rollup-plugin-peer-deps-external": "^2.2.4",
+        "rollup-plugin-postcss": "^4.0.2",
+        "rollup-plugin-serve": "^1.1.1",
+        "style-loader": "^4.0.0",
+        "tailwindcss": "^3.4.4",
+        "ts-loader": "^9.5.1",
+        "tslib": "^2.6.3",
+        "typescript": "^6.0.3",
+        "webpack": "^5.93.0",
+        "webpack-cli": "^5.1.4",
+        "webpack-dev-server": "^5.0.4"
+    },
+    "main": "dist/cjs/index.js",
+    "module": "dist/esm/index.js",
+    "files": [
+        "dist"
+    ],
+    "types": "dist/index.d.ts",
+    "exports": {
+        ".": {
+            "types": "./dist/index.d.ts",
+            "import": "./dist/esm/index.js",
+            "require": "./dist/cjs/index.js",
+            "default": "./dist/esm/index.js"
+        },
+        "./dist/index.css": "./dist/index.css",
+        "./index.css": "./dist/index.css",
+        "./package.json": "./package.json"
+    },
+    "peerDependencies": {
+        "@types/react": "^18.0.0 || ^19.0.0",
+        "react": "^18.0.0 || ^19.0.0",
+        "react-dom": "^18.0.0 || ^19.0.0"
+    },
+    "peerDependenciesMeta": {
+        "@types/react": {
+            "optional": true
+        }
+    },
+    "dependencies": {
+        "@emotion/react": "^11.13.0",
+        "clsx": "^2.1.1",
+        "react-slick": "^0.31.0",
+        "slick-carousel": "^1.8.1"
+    },
+    "engines": {
+        "node": ">=18.12.0"
     }
-  },
-  "dependencies": {
-    "@emotion/react": "^11.13.0",
-    "clsx": "^2.1.1",
-    "react-slick": "^0.31.0",
-    "slick-carousel": "^1.8.1"
-  },
-  "engines": {
-    "node": ">=18.12.0"
-  }
 }
