@@ -6,6 +6,7 @@
     "start": "webpack serve --config webpack.config.js",
     "dev": "rollup -c rollup.config.dev.js -w --bundleConfigAsCjs",
     "typecheck": "tsc --noEmit --pretty false",
+    "prepack": "npm run build",
     "build": "rollup -c --bundleConfigAsCjs"
   },
   "keywords": [
